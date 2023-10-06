@@ -14,10 +14,8 @@ def dfs(visited,graph,node):
         for neighbour in graph[node]:
             # Recusion 1: 'A' => neighbour = 'B' 
             # Recusion 2: 'B' => neighbour = 'D'
-            # Recusion 3: 'D' 
-            # Recusion 4: 'B' => neighbour = 'E'
-            # Recusion 5: 'E' => neighbour = 'F'
-            # Recusion 6: 'F'
-            # Recusion 7: 'A' => neighbour = 'C'
+            # Recusion 3: 'B' => neighbour = 'E'
+            # Recusion 4: 'E' => neighbour = 'F'
+            # Recusion 5: 'A' => neighbour = 'C'
             dfs(visited,graph,neighbour)
 dfs(visited,graph,'A')
