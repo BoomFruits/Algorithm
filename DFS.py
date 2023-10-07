@@ -17,5 +17,6 @@ def dfs(visited,graph,node):
             # Recusion 3: 'B' => neighbour = 'E'
             # Recusion 4: 'E' => neighbour = 'F'
             # Recusion 5: 'A' => neighbour = 'C'
+            # Any ?
             dfs(visited,graph,neighbour)
 dfs(visited,graph,'A')
